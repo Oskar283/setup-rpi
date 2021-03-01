@@ -12,4 +12,4 @@ else
     echo "dotfiles already cloned"
 fi
 
-/bin/bash /home/$USER/dotfiles/install
+/bin/bash /home/$USER/dotfiles/install # Install dotfiles
