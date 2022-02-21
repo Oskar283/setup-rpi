@@ -68,8 +68,13 @@ END
 
 #/usr/bin/raspi-config do_wifi_ssid_passphrase # Interactively configure the wifi network
 
-#/usr/bin/aptitude update                      # Update the software package information
-#/usr/bin/aptitude upgrade                     # Upgrade installed software to the latest versions
+/usr/bin/apt update                      # Update the software package information
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+echo $SCRIPT_DIR
+$SCRIPT_DIR/install_programs.sh
+
+/usr/bin/apt upgrade                     # Upgrade installed software to the latest versions
+
 
 #/usr/bin/raspi-config do_change_pass          # Interactively set password for your login
 
