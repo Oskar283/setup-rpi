@@ -4,6 +4,7 @@
 
 
 apt -y install tmux vim git cmake
+apt -y install mosh #for better
 
 if [ -d "~/dotfiles"]
 then
