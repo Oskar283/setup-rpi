@@ -10,7 +10,7 @@ Put the setup.sh script in the /boot folder of a newly created Raspberry Pi imag
 At startup copy the script to the home folder
 ```cp /boot/setup_rpi.sh ~/```
 Run it
-```./setup_rpi.sh```
+```sudo ./setup_rpi.sh```
 
 ## Option 2
 Clone repo and run when Rpi is already running
